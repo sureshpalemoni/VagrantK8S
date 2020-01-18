@@ -17,6 +17,7 @@ Vagrant.configure("2") do |config|
 
     master1.vm.provider "virtualbox" do |master1m|
       master1m.memory = 2048
+      master1m.cpus = 2
     end
   end
 
@@ -27,6 +28,7 @@ Vagrant.configure("2") do |config|
 
     master2.vm.provider "virtualbox" do |master2m|
       master2m.memory = 2048
+      master2m.cpus = 2
     end
   end
 
@@ -37,5 +39,7 @@ Vagrant.configure("2") do |config|
 
     master3.vm.provider "virtualbox" do |master3m|
       master3m.memory = 2048
+      master3m.cpus = 2
     end
   end
+end
